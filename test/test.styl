@@ -1,0 +1,254 @@
+/* TEST FILE ONLY! NOT INTEDED FOR USE IN REAL-WORLD! */
+/*
+ * By Rui:
+ *
+ * 1. list data as arg of mixin should wrap with parentheses
+ */
+
+@import "../flex";
+
+/*--------------------------------------------------------------------*/
+
+.flexbox
+  flexbox()
+
+.flexbox-inline
+  inline-flex()
+
+/*--------------------------------------------------------------------*/
+
+.flex-direction-A
+  flex-direction()
+
+.flex-dir-A
+  flex-direction()
+
+/* row */
+.flex-direction-B
+  flex-direction row
+.flex-dir-B
+  flex-direction row
+
+/* row-reverse */
+.flex-direction-C
+  flex-direction row-reverse
+.flex-dir-C
+  flex-direction row-reverse
+
+/* column */
+.flex-direction-D
+  flex-direction column
+.flex-dir-D
+  flex-direction column
+
+/* column-reverse */
+.flex-direction-E
+  flex-direction column-reverse
+.flex-dir-E
+  flex-direction column-reverse
+
+/*--------------------------------------------------------------------*/
+
+.flex-wrap-A
+  flex-wrap()
+
+/* nowrap */
+.flex-wrap-B
+  flex-wrap nowrap
+
+/* nowrap */
+.flex-wrap-C
+  flex-wrap wrap
+
+/* nowrap */
+.flex-wrap-D
+  flex-wrap wrap-reverse
+
+/*--------------------------------------------------------------------*/
+
+.flex-flow-A
+  flex-flow()
+
+/* row nowrap */
+.flex-flow-B
+  flex-flow(row nowrap) // 1
+
+/* column-reverse wrap */
+.flex-flow-C
+  flex-flow(column-reverse wrap) // 1
+
+/*--------------------------------------------------------------------*/
+
+.order-A
+  order()
+
+/* -1 */
+.order-B
+  order -1
+
+/* 5 */
+.order-C
+  order 5
+
+/*--------------------------------------------------------------------*/
+
+.flex-grow-A
+  flex-grow()
+
+/* 3 */
+.flex-grow-B
+  flex-grow 3
+
+/*--------------------------------------------------------------------*/
+
+.flex-shrink-A
+  flex-shrink()
+
+/* 2 */
+.flex-shrink-B
+  flex-shrink 2
+
+/*--------------------------------------------------------------------*/
+
+.flex-basis-A
+  flex-basis()
+
+.flex-basis-B
+  flex-basis 18rem
+
+/*--------------------------------------------------------------------*/
+
+.flex-A
+  flex()
+
+/* 1, 6, 20% */
+.flex-B
+  flex 1, 6, 20%
+
+/* 1, 20%, null */
+.flex-C
+  flex 1, 20%
+
+/* 1, null, null */
+.flex-D
+  flex 1
+
+/*--------------------------------------------------------------------*/
+
+.justify-content-A
+  justify-content()
+.flex-just-A
+  justify-content()
+
+/* flex-start */
+.justify-content-B
+  justify-content flex-start
+.flex-just-B
+  justify-content flex-start
+
+/* flex-end */
+.justify-content-C
+  justify-content flex-end
+.flex-just-C
+  justify-content flex-end
+
+/* flex-end */
+.justify-content-D
+  justify-content center
+.flex-just-D
+  justify-content center
+
+/* space-between */
+.justify-content-E
+  justify-content space-between
+.flex-just-E
+  justify-content space-between
+
+/* space-around */
+.justify-content-E
+  justify-content space-around
+.flex-just-E
+  justify-content space-around
+
+/*--------------------------------------------------------------------*/
+
+.align-items-A
+  align-items()
+
+/* flex-start */
+.align-items-C
+  align-items flex-start
+
+/* flex-end */
+.align-items-D
+  align-items flex-end
+
+/* center */
+.align-items-E
+  align-items center
+
+/* baseline */
+.align-items-F
+  align-items baseline
+
+/* stretch */
+.align-items-G
+  align-items stretch
+
+/*--------------------------------*/
+
+.align-self-A
+  align-self()
+
+/* auto */
+.align-self-B
+  align-self auto
+
+/* flex-start */
+.align-self-C
+  align-self flex-start
+
+/* flex-end */
+.align-self-D
+  align-self flex-end
+
+/* center */
+.align-self-E
+  align-self center
+
+/* baseline */
+.align-self-F
+  align-self baseline
+
+/* stretch */
+.align-self-G
+  align-self stretch
+
+/*--------------------------------------------------------------------*/
+
+.align-content-A
+  align-content()
+
+/* flex-start */
+.align-content-B
+  align-content flex-start
+
+/* flex-end */
+.align-content-C
+  align-content flex-end
+
+/* center */
+.align-content-D
+  align-content center
+
+/* space-between */
+.align-content-E
+  align-content space-between
+
+/* space-around */
+.align-content-F
+  align-content space-around
+
+/* stretch */
+.align-content-G
+  align-content stretch
